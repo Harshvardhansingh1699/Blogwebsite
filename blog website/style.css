@@ -1,0 +1,312 @@
+/* Reset some default styles for better consistency */
+html,
+body,
+h1,
+h2,
+ul,
+li,
+form,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling for your blog */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  line-height: 1.6;
+}
+/* CSS for the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+/* Search bar styles */
+nav form {
+  display: flex;
+  align-items: center;
+}
+
+nav form input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px; /* Adjust the width as needed */
+}
+
+nav form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-left: 10px; /* Add spacing between input and button */
+  cursor: pointer;
+}
+
+nav form button:hover {
+  background-color: #555; /* Change button color on hover */
+}
+
+/* Navigation links styles */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove margin from the last navigation item */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Center the h1 and align the navigation links to the right */
+/* 
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+} */
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* .blog-post {
+  margin-bottom: 40px;
+} */
+
+.blog-post {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 0 auto; /* Center the blog post horizontally */
+  max-width: 800px; /* Adjust the maximum width as needed */
+  text-align: left; /* Left-align the blog content */
+  overflow: hidden; /* Clear any floated elements within the blog post */
+  display: flex; /* Use flexbox to position image and summary side by side */
+}
+
+.blog-image {
+  flex: 1; /* Take up 50% of the width */
+  max-width: 50%; /* Limit the maximum width */
+  margin-right: 20px; /* Add some spacing between the image and summary */
+}
+
+.blog-image img {
+  max-width: 100%;
+  border-radius: 5px; /* Add a subtle border-radius to the image */
+}
+
+.blog-summary {
+  flex: 2; /* Take up 50% of the width */
+}
+
+.blog-summary h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blog-summary p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.date {
+  font-style: italic;
+}
+
+.author {
+  font-weight: bold;
+}
+
+/* footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  position: fixed; /* Set the footer to a fixed position */
+/* left: 0; */
+/* bottom: 0; */
+/* width: 100%;  */
+/* Occupy the full width of the viewport */
+/* } */
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-bottom {
+  background-color: #222;
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.about-me {
+  text-align: center;
+  padding: 20px;
+}
+
+/* .about-me img {
+  max-width: 100%; */
+/* border-radius: 50%; Make the image circular */
+/* margin-bottom: 20px; */
+/* }
+
+*/
+/* CSS for the profile image */
+.profile-image {
+  max-width: 250px; /* Adjust the maximum width for the image */
+  display: block; /* Ensure the image doesn't affect the text flow */
+  margin: 0 auto 20px; /* Center the image horizontally and add some spacing at the bottom */
+  border-radius: 50%; /* Makes the image circular */
+}
+
+.about-me h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-me p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* CSS for the .add-blog section */
+.add-blog {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.add-blog h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.add-blog textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.add-blog button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* CSS for individual blog posts */
+.individual-blog-post {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.individual-blog-post p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
